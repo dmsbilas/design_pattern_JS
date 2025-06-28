@@ -60,3 +60,23 @@ class BankAccountBuilder implements AccountBuilder {
     }
 }
 
+
+const aNewAccount = new BankAccountBuilder()
+    .setAccountNumber("1234567890")
+    .setAccountHolder("Mr A")
+    .setBalance(1000)
+    .setAccountType("Savings")
+    .setAccountStatus("Active")
+    .setAccountCreatedAt(new Date())
+    .setAccountUpdatedAt(new Date())
+    .getAccount();
+
+
+const bNewAccount = new BankAccountBuilder()
+    .setAccountNumber("1234567890")
+    .setAccountHolder("Mr B")
+    .setBalance(1000)
+    .getAccount();
+
+
+
